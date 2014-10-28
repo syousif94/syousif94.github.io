@@ -59,8 +59,13 @@ header {
 	color: #35465c;
 }
 
-.twitter {
+.soundcloud {
 	-webkit-animation: fade 1s .7s 1 forwards;
+	color: #f30;
+}
+
+.twitter {
+	-webkit-animation: fade 1s .8s 1 forwards;
 	color: #55acee;
 }
 

@@ -4,7 +4,7 @@ body {
 	font-size: 16px;
 }
 
-@-webkit-keyframes headerFade {
+@-webkit-keyframes fade {
     0% {
     	opacity: 0;
     	-webkit-transform: translateY(0);
@@ -15,12 +15,55 @@ body {
     }
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 header {
 	position: absolute;
 	top: 30px;
 	left: 45px;
 	font-weight: 700;
 	opacity: 0;
-	-webkit-animation: headerFade 1s .4s 1 forwards;
+	-webkit-animation: fade 1s .4s 1 forwards;
 	display: inline-block;
 }
+
+.links {
+	padding: 0 0 0 15px;
+	position: absolute;
+	top: 80px;
+	left: 45px;
+	list-style: none;
+	font-weight: 700;
+}
+
+.link {
+	opacity: 0;
+	line-height: 40px;
+}
+
+.github {
+	-webkit-animation: fade 1s .5s 1 forwards;
+	color: #6cc644;
+}
+
+.tumblr {
+	-webkit-animation: fade 1s .6s 1 forwards;
+	color: #35465c;
+}
+
+.twitter {
+	-webkit-animation: fade 1s .7s 1 forwards;
+	color: #55acee;
+}
+
+
+
+
+
+
+
+
+

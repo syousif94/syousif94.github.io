@@ -9,6 +9,17 @@ body {
 	width: 100%;
 }
 
+@keyframes fade {
+    0% {
+    	opacity: 0;
+    	transform: translateY(0);
+    }
+    100% {
+    	opacity: 1;
+    	transform: translateY(-5px);
+    }
+}
+
 @-webkit-keyframes fade {
     0% {
     	opacity: 0;
@@ -31,6 +42,7 @@ header {
 	left: 45px;
 	font-weight: 700;
 	opacity: 0;
+	animation: fade 1s .4s 1 forwards;
 	-webkit-animation: fade 1s .4s 1 forwards;
 	display: inline-block;
 }
@@ -50,21 +62,25 @@ header {
 }
 
 .github {
+	animation: fade 1s .5s 1 forwards;
 	-webkit-animation: fade 1s .5s 1 forwards;
 	color: #6cc644;
 }
 
 .tumblr {
+	animation: fade 1s .6s 1 forwards;
 	-webkit-animation: fade 1s .6s 1 forwards;
 	color: #35465c;
 }
 
 .soundcloud {
+	animation: fade 1s .7s 1 forwards;
 	-webkit-animation: fade 1s .7s 1 forwards;
 	color: #f30;
 }
 
 .twitter {
+	animation: fade 1s .8s 1 forwards;
 	-webkit-animation: fade 1s .8s 1 forwards;
 	color: #55acee;
 }

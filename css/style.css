@@ -41,21 +41,17 @@ header {
 	top: 30px;
 	left: 25px;
 	font-weight: 700;
+  font-size: 18px;
 	opacity: 0;
 	animation: fade 1s .4s 1 forwards;
 	-webkit-animation: fade 1s .4s 1 forwards;
 	display: inline-block;
 }
 
-.profile {
-  height: 60px;
-  border-radius: 4px;
-}
-
 .links {
 	padding: 0;
 	position: absolute;
-	top: 110px;
+	top: 50px;
 	left: 25px;
 	list-style: none;
 	font-weight: 700;

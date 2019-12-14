@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #000;
+}
+
+body {
+  background: #000;
+  font-family: "Roboto", sans-serif;
+  padding: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #999;
+  font-size: 13vh;
+  max-width: 65vw;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #999;
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ccc;
+  font-size: 22px;
+  margin-bottom: 1vh;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  width: 300px;
+  color: #666;
+}
+
+.section {
+  flex: 0 0 auto;
+  margin: 3vh;
+}
+
+.factoids {
+  display: flex;
+}
+
+.factoid {
+  flex: 0 0 auto;
+  margin-top: 6vh;
+  margin-right: 6vh;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo {
+  height: 23vh;
+  width: 23vh;
+  margin-right: 5vh;
+  border-radius: 50%;
+  background: url("assets/header2.jpeg") #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.projects-section {
+  flex: 0 0 auto;
+  margin: 3vh;
+  margin-left: 4vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  flex: 1;
+  max-height: 600px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 5vh;
+}
+
+.project-info {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-photo {
+  flex: 1;
+}
+
+.buncha {
+  background: url("assets/buncha.png");
+  background-size: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: 60vh;
+}
+
+.sprinkle {
+  margin: 2vh 0 0;
+  background: url("assets/sprinkle.jpeg");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.buses {
+  margin: 0 0 2vh;
+  background: url("assets/utbuses.png");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.duelist {
+  margin: 2vh 0 0;
+  background: url("assets/duelist.jpeg");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.miami {
+  margin: 0 0 2vh;
+  background: url("assets/miami.png");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}

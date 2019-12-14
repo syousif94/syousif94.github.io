@@ -38,13 +38,12 @@ h1 {
   font-weight: 700;
   color: #999;
   font-size: 13vh;
-  max-width: 65vw;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  color: #999;
+  color: #444;
   font-size: 5vh;
   margin-bottom: 2vh;
 }
@@ -52,7 +51,7 @@ h2 {
 h3 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  color: #ccc;
+  color: #aaa;
   font-size: 22px;
   margin-bottom: 1vh;
 }
@@ -61,7 +60,7 @@ p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   width: 300px;
-  color: #666;
+  color: #777;
 }
 
 .section {
@@ -107,58 +106,85 @@ p {
 .projects {
   display: flex;
   flex: 1;
-  max-height: 600px;
+  position: relative;
+}
+
+.project-header {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-right: 5vh;
+  margin-right: 50px;
 }
 
-.project-info {
-  background-color: rgba(0, 0, 0, 0.5);
+.project.horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.project.buses {
+  margin-left: -300px;
+  align-items: flex-end;
+}
+
+.project.due {
+  margin-left: -150px;
+  align-items: flex-start;
 }
 
 .project-photo {
   flex: 1;
 }
 
-.buncha {
+.project.horizontal .project-photo {
+  height: 100%;
+  width: 300px;
+}
+
+.project.horizontal .project-info {
+  padding: 10px;
+  background: #000;
+  z-index: 10;
+}
+
+.project-photo.buncha {
+  margin: 8vh 0 2vh;
   background: url("assets/buncha.png");
   background-size: contain;
-  background-position: center left;
+  background-position: center;
   background-repeat: no-repeat;
   width: 60vh;
 }
 
-.sprinkle {
-  margin: 2vh 0 0;
+.project-photo.sprinkle {
+  margin-right: 10px;
   background: url("assets/sprinkle.jpeg");
   background-size: contain;
-  background-position: top left;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 
-.buses {
-  margin: 0 0 2vh;
+.project-photo.buses {
+  margin-left: 10px;
   background: url("assets/utbuses.png");
   background-size: contain;
-  background-position: top left;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
-.duelist {
-  margin: 2vh 0 0;
+.project-photo.duelist {
   background: url("assets/duelist.jpeg");
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
 }
 
-.miami {
-  margin: 0 0 2vh;
+.project-photo.miami {
   background: url("assets/miami.png");
   background-size: contain;
   background-position: top left;
